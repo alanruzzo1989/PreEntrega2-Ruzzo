@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
 
 * {
     padding: 0;
@@ -37,7 +37,7 @@ body {
     gap: 20rem;
     border:groove 5px #7e7c7a;
     border-radius: 2%;
-    font-family: 'Lumanosimo', cursive;
+    font-family: 'Noto Serif Makasar', serif;
     font-size: 20px;
     text-shadow: 0 0 10px #e58f8f;   
     grid-area: logo;
@@ -56,39 +56,91 @@ body {
 .home__productos {
     grid-area: productos;
     color: #f5b4b4;
-    font-family: 'Bagel Fat One', cursive;
+    font-family: 'Open Sans', sans-serif;
     text-shadow: 14px 10px 7px #f74141;
     font-size: 20px;
     letter-spacing: 4px;
     background-color: #141414;
+    background-image: url(../Img/IMGProductos.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home__giftcard {
     grid-area: giftcard;
     color: #f5b4b4;
-    font-family: 'Bagel Fat One', cursive;
+    font-family: 'Open Sans', sans-serif;
     text-shadow: 14px 10px 7px #f74141;
     font-size: 20px;
     letter-spacing: 4px;
     background-color: #202020;
+    background-image: url(../Img/IMGGift.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home__nosotros {
     grid-area: nosotros;
     color: #f5b4b4;
-    font-family: 'Bagel Fat One', cursive;
+    font-family: 'Open Sans', sans-serif;
     text-shadow: 14px 10px 7px #f74141;
     font-size: 20px;
     letter-spacing: 4px;
     background-color: #302f2f;
+    background-image: url(../Img/IMGQuienSoy.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home__contacto {
     grid-area: contactos;
     color: #f5b4b4;
-    font-family: 'Bagel Fat One', cursive;
-    text-shadow: 14px 10px 7px #f74141 ;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 14px 10px 7px #f74141;
     font-size: 20px;
     letter-spacing: 4px;
     background-color: #3f3e3e;
+    background-image: url(../Img/IMGContacto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------------------------PAGINA SERVICIOS------------------------------------------------ */
+
+body {
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Noto Serif', serif;
+}
+
+.logo__indum {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+}
+
+.logo__simbolo {
+    font-size: 1rem;
+}
+
+.navbar__item {
+    list-style-type: none;
+}
+
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 0px 1px #c4afaf;
+    display: flex;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 2.5rem;
+    letter-spacing: .5rem;
 }
