@@ -107,8 +107,12 @@ body {
 
 /* ------------------------------------------------PAGINA SERVICIOS------------------------------------------------ */
 
-body {
+.body__productos {
     background-color: #141414;
+}
+
+.nav__productos.active a, .nav__productos a:hover {
+    text-decoration: underline overline white;
 }
 
 header {
@@ -190,7 +194,7 @@ header {
     grid-area: img4;
 }
 
-.button {
+.button a {
     grid-area: vermas;
     background-color: #383333;
     color: red;
@@ -200,6 +204,7 @@ header {
     outline: 3px solid #000000;    
     text-align: center;
     font-family: 'Noto Serif', serif;
+    padding-inline: 1.5rem;
 }
 
 .buzos {
@@ -277,7 +282,7 @@ header {
     grid-area: img8;
 }
 
-.button__remeras {
+.button__remeras a {
     grid-area: vermas;
     background-color: #383333;
     color: red;
@@ -287,4 +292,72 @@ header {
     outline: 3px solid #000000;    
     text-align: center;
     font-family: 'Noto Serif', serif;
+    padding-inline: 1.5rem;
+}
+
+/* ------------------------------------------------PAGINA GIFT CARD------------------------------------------------ */
+
+.body__giftcard {
+    background-color: #202020;
+}
+
+.nav__giftcard.active a, .nav__giftcard a:hover {
+    text-decoration: underline overline white;
+}
+
+/* ------------------------------------------------FOOTER------------------------------------------------ */
+
+.footer {
+    background-color: black;
+    position: relative;
+}
+
+.footer-principal {
+    background-color: #141414;
+}
+
+.footer-secundario {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: black;
+}
+
+.footer-menu {
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes li {
+    display: inline-block;
+}
+
+.redes a {
+    padding: 10px;
+}
+
+.redes a img {
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+.footer-pagos {
+    padding: 5px;
+    width: 50px;
+    height: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-redes {
+    border-radius: 50%;
 }
