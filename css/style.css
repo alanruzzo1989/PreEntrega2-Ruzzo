@@ -108,7 +108,7 @@ body {
 /* ------------------------------------------------PAGINA PRODUCTOS------------------------------------------------ */
 
 .body__productos {
-    background-color: #141414;
+    background-color: #050505;
 }
 
 .navbar > ul > li:hover {
@@ -303,7 +303,7 @@ header {
 /* ------------------------------------------------FOOTER------------------------------------------------ */
 
 .body__giftcard {
-    background-color: #202020;
+    background-color: #1a1818;
 }
 
 .footer-principal {
@@ -390,6 +390,10 @@ header {
 
 /* ------------------------------------------------PAGINA GIFT CARD------------------------------------------------ */
 
+.body__giftcard {
+    background-color: #202020;
+}
+
 .conteiner__giftcard {
     padding-top: 2rem;
     padding-inline: 5rem;
@@ -425,7 +429,7 @@ header {
 /* ------------------------------------------------PAGINA NOSOTROS------------------------------------------------ */
 
 .body__nosotros {
-    background-color: #302f2f;
+    background-color: #2c2b2b;
 }
 
 .conteiner__nosotros {
@@ -520,7 +524,39 @@ header {
 
     .home__contacto {
         flex: 1;
+    }  
+}
+
+/* -----------------------------------------MEDIA QUARIES PAGINA PRODUCTOS----------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 5rem;
+        width: 480px;
     }
 
-    
+    .navegacion {
+        width: 100vh;
+    }
+
+    .nav__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: max-content;
+        padding-inline: 7rem;
+    }
+
+    .logo {
+        padding-left: 17rem;
+        min-width: max-content;
+    }
+
+    .logo__indum {
+        font-size: 1.5rem;
+    }
+
 }
