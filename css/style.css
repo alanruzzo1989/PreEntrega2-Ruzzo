@@ -105,14 +105,20 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ------------------------------------------------PAGINA SERVICIOS------------------------------------------------ */
+/* ------------------------------------------------PAGINA PRODUCTOS------------------------------------------------ */
 
 .body__productos {
     background-color: #141414;
 }
 
-.nav__productos.active a, .nav__productos a:hover {
-    text-decoration: underline overline white;
+.navbar > ul > li:hover {
+    background-color: #887979;
+    box-shadow: 2px 2px 8px white inset;
+}
+
+.active {
+    background-color: #887979;
+    box-shadow: 2px 2px 8px white inset;
 }
 
 header {
@@ -165,7 +171,7 @@ header {
     text-shadow: 1px 1px 1px #f74141
 }
 
-/* ------------------------------------------------PAGINA SERVICIOS / SECCION FOTOS------------------------------------------------ */
+/* ---------------------------------------PAGINA PRODUCTOS / SECCION FOTOS---------------------------------------- */
 
 .cards {
     display: grid;
@@ -246,7 +252,6 @@ header {
     display: flex;
     text-align: end;
     justify-content: end;
-    padding-inline: 1rem;
     color: red;
     text-shadow: 10px 0px 50px  #ffffff;
     font-family: 'Noto Serif', serif;
@@ -295,25 +300,47 @@ header {
     padding-inline: 1.5rem;
 }
 
-/* ------------------------------------------------PAGINA GIFT CARD------------------------------------------------ */
+/* ------------------------------------------------FOOTER------------------------------------------------ */
 
 .body__giftcard {
     background-color: #202020;
 }
 
-.nav__giftcard.active a, .nav__giftcard a:hover {
-    text-decoration: underline overline white;
+.footer-principal {
+    margin-top: 0rem;
 }
 
-/* ------------------------------------------------FOOTER------------------------------------------------ */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.container p {
+    font-style: oblique;
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 130px;
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-family: 'Open Sans';
+}
 
 .footer {
     background-color: black;
     position: relative;
-}
-
-.footer-principal {
-    background-color: #141414;
 }
 
 .footer-secundario {
@@ -321,7 +348,6 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px;
-    background: black;
 }
 
 .footer-menu {
@@ -359,5 +385,93 @@ header {
 }
 
 .footer-redes {
-    border-radius: 50%;
+    color: red;
+}
+
+/* ------------------------------------------------PAGINA GIFT CARD------------------------------------------------ */
+
+.conteiner__giftcard {
+    padding-top: 2rem;
+    padding-inline: 5rem;
+    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-bottom: 1px solid white;
+}
+
+.titulo__gifcard {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .5rem;
+    text-decoration: underline 1px solid white;
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.parrafo {
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family:  Geneva;
+    letter-spacing: .14rem;
+    margin-bottom: 5rem;
+}
+
+/* ------------------------------------------------PAGINA NOSOTROS------------------------------------------------ */
+
+.body__nosotros {
+    background-color: #302f2f;
+}
+
+.conteiner__nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: 5rem;
+    height: 100vh;
+}
+
+.contenido__principal {
+    padding: 3rem;
+    padding-top: 10rem;
+}
+
+.titulo__nosotros {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .5rem;
+    text-decoration: underline 1px solid white;
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.parrafo__nosotros {
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    font-family:  Geneva;
+    margin-bottom: 5rem;
+}
+
+/* ------------------------------------------------PAGINA CONTACTO------------------------------------------------ */
+
+.body__contacto {
+    background-color: #3f3e3e;
+}
+
+.form__contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
