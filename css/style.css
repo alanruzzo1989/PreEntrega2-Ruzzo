@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: white;
+    color: black;
+}
+
 /* ------------------------------------------------PAGINA INICIAL------------------------------------------------ */
 
 body {
@@ -310,10 +315,6 @@ li {
 
 /* ------------------------------------------------FOOTER------------------------------------------------ */
 
-.body__giftcard {
-    background-color: #1a1818;
-}
-
 .footer-principal {
     margin-top: 0rem;
 }
@@ -390,10 +391,6 @@ li {
     width: 50px;
     height: 40px;
     margin-bottom: 50px;
-}
-
-.footer-redes {
-    color: red;
 }
 
 /* ------------------------------------------------PAGINA GIFT CARD------------------------------------------------ */
@@ -600,7 +597,7 @@ li {
 
 /* -----------------------------------------MEDIA QUARIES PAGINA PRODUCTOS----------------------------------------- */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
 
     header {
         display: grid;
