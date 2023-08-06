@@ -13,4 +13,70 @@
 *::selection {
   background-color: white;
   color: black;
+}
+
+body {
+  background-color: black;
+}
+
+.home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "logo  productos  giftcard" "logo  nosotros   contactos";
+}
+.home .home__img {
+  gap: 20rem;
+  border: groove 5px #7e7c7a;
+  border-radius: 2%;
+  font-family: "Noto Serif Makasar", serif;
+  font-size: 20px;
+  text-shadow: 0 0 10px #e58f8f;
+  grid-area: logo;
+  background-image: url(../Img/Logo.jpg);
+  background-color: #443f3f;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home a {
+  border: groove 5px #7e7c7a;
+  border-radius: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.home .home__productos, .home .home__contacto, .home .home__nosotros, .home .home__giftcard {
+  grid-area: productos;
+  color: #f5b4b4;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 14px 10px 7px #f74141;
+  font-size: 20px;
+  letter-spacing: 4px;
+  background-color: #141414;
+  background-image: url(../Img/IMGProductos.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home .home__giftcard {
+  grid-area: giftcard;
+  background-color: #202020;
+  background-image: url(../Img/IMGGiftcard.png);
+}
+.home .home__nosotros {
+  grid-area: nosotros;
+  background-color: #302f2f;
+  background-image: url(../Img/IMGQuienSoy.png);
+}
+.home .home__contacto {
+  grid-area: contactos;
+  background-color: #3f3e3e;
+  background-image: url(../Img/email.png);
 }/*# sourceMappingURL=estilo.css.map */
