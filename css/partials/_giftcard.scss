@@ -11,6 +11,11 @@
     margin-right: 15rem;
     border-bottom: 1px solid $ColorPricipal;
 
+        @include mobile {
+            padding: 4rem 0rem 0rem 0rem;
+            margin: 2rem 4rem 0rem 4rem;
+        }
+
     .titulo__gifcard {
         color: $ColorPricipal;
         display: flex;

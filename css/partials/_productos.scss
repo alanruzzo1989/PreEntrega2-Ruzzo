@@ -6,6 +6,11 @@
     font-size:xx-large;
     padding-top: 2rem;
     padding-inline: 15rem;
+
+        @include mobile {
+            padding-left: 3rem;
+            font-size: 1rem;
+        }
 }
 
 main {
@@ -13,12 +18,20 @@ main {
         background-color: #802c2c;
         border: .05rem solid white;
 
+            @include mobile {
+                width: 13rem;
+            }
+
         .card-text {
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: $NotoSerif;
             color: white;
+
+                @include mobile {
+                    font-size: 0.8rem;
+                }
         }
         
         .card-text1 {
@@ -46,23 +59,60 @@ main {
     align-items: center;
     justify-content: center;
 
+        @include mobile {
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            grid-template-rows: 1fr 1fr .3fr;
+            grid-template-areas:
+            "img1   img2"
+            "img3   img4"
+            "vermas vermas";
+            gap: 0.7rem;
+            padding-inline: 2rem;
+        }
+
     .img1 {
         grid-area: img1;
+
+            @include mobile {
+                grid-area: img1;
+                padding: 0rem;
+            }
     }
     
     .img2 {
         grid-area: img2;
+
+        @include mobile {
+            grid-area: img2;
+            padding: 0rem;
+        }
     }
     
     .img3 {
         grid-area: img3;
+
+        @include mobile {
+            grid-area: img3;
+            padding: 0rem;
+        }
     }
     
     .img4 {
         grid-area: img4;
+
+        @include mobile {
+            grid-area: img4;
+            padding: 0rem;
+        }
     }
     
     .button {
+
+        @include mobile {
+            grid-area: vermas;
+            display: flex;
+        }
 
         a {
             grid-area: vermas;
@@ -87,6 +137,11 @@ main {
     font-size:xx-large;
     padding-top: 5rem;
     padding-inline: 15rem;
+
+        @include mobile {
+            font-size: 1rem;
+            padding: 0.5rem 3rem 0rem 0rem;
+        }
 }
 
 .cards__remeras {
@@ -99,24 +154,62 @@ main {
     align-items: center;
     justify-content: center;
 
+     @include mobile {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: 1fr 1fr .3fr;
+        grid-template-areas:
+        "img5   img6"
+        "img7   img8"
+        "vermas vermas";
+        gap: 0.7rem;
+        padding-inline: 2rem;
+        max-width: max-content;
+    }
+
     .img5 {
         grid-area: img5;
+
+            @include mobile {
+                grid-area: img5;
+                padding: 0rem;
+            }
     }
     
     .img6 {
         grid-area: img6;
+
+        @include mobile {
+            grid-area: img6;
+            padding: 0rem;
+        }
     }
     
     .img7 {
         grid-area: img7;
+
+        @include mobile {
+            grid-area: img7;
+            padding: 0rem;
+        }
     }
     
     .img8 {
         grid-area: img8;
+
+        @include mobile {
+            grid-area: img8;
+            padding: 0rem;
+        }
     }
     
     .button__remeras {
         text-align: end;
+
+            @include mobile {
+                grid-area: vermas;
+                display: flex;
+            }
 
         a {
             grid-area: vermas;

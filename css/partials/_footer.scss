@@ -8,6 +8,10 @@
         justify-content: center;
         margin: 7rem 0rem 5rem 6rem;
 
+            @include mobile {
+                margin-inline: 0rem;
+            }
+
         & p {
             font-style: oblique;
         }
@@ -17,6 +21,12 @@
             align-items: center;
             justify-content: center;
             margin: 10px 130px;
+
+                @include mobile {
+                    margin: 2px 54px;
+                    margin-inline: 2.5rem;
+                    width: 4rem;
+                }
         }
         
         .descripcion {
@@ -27,6 +37,10 @@
             font-family: $OpenSans;
             color: $ColorPricipal;
             font-family: 'Open Sans';
+
+                @include mobile {
+                    font-size: .5rem;
+                }
         }
     }
 }
@@ -52,8 +66,17 @@
     .redes {
         padding: 0rem;
 
+            @include mobile {
+                display: flex;
+                padding-left: 0rem;
+            }
+
             li {
                 display: inline-block;
+
+                    @include mobile {
+                        font-size: 1.3rem;
+                    }
             }
 
             & a {

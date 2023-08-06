@@ -10,11 +10,27 @@
     text-align: center;
     padding-inline: 5rem;
     height: 100vh;
+
+        @include mobile {
+            display: grid;
+            padding-inline: 0rem;
+        }
+    
+    .img__nosotros {
+        @include mobile {
+            width: 40%;
+            padding-top: 2rem;
+        }
+    }
 }
 
 .contenido__principal {
     padding: 3rem;
     padding-top: 10rem;
+
+        @include mobile {
+            padding-top: 0;
+        }
 
     .titulo__nosotros {
         color: $ColorPricipal;
@@ -25,6 +41,10 @@
         text-decoration: underline 1px solid $ColorPricipal;
         font-size: 3rem;
         font-family: $OpenSans;
+
+            @include mobile {
+                font-size: 2rem;
+            }
     }
     
     .parrafo__nosotros {
@@ -36,5 +56,10 @@
         font-size: 1.05rem;
         font-family: $NotoSerif;
         margin-bottom: 5rem;
+
+            @include mobile {
+                font-size: .8rem;
+                margin: 0;
+            }
     }
 }

@@ -145,13 +145,30 @@ header {
   padding-top: 1rem;
   padding-inline: 4rem;
 }
+@media screen and (max-width: 480px) {
+  header {
+    display: grid;
+    padding-inline: 3rem;
+  }
+}
 header .titulo__marca {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  header .titulo__marca {
+    display: inline;
+  }
+}
 header .titulo__marca .logo {
   font-family: "Noto Serif", serif;
   color: white;
+}
+@media screen and (max-width: 480px) {
+  header .titulo__marca .logo {
+    font-size: 3rem;
+    font-style: oblique;
+  }
 }
 header .titulo__marca .logo__simbolo {
   font-size: 1rem;
@@ -160,6 +177,12 @@ header .titulo__marca .logo__indum {
   font-family: "Open Sans", sans-serif;
   font: caption;
   font-size: 1.8rem;
+}
+@media screen and (max-width: 480px) {
+  header .titulo__marca .logo__indum {
+    font-size: 2.2rem;
+    font-style: oblique;
+  }
 }
 header .titulo__marca .logo__img {
   width: 40px;
@@ -171,6 +194,13 @@ header .nav__menu {
   gap: 3rem;
   margin-bottom: 0rem;
   letter-spacing: 0.2rem;
+}
+@media screen and (max-width: 480px) {
+  header .nav__menu {
+    letter-spacing: 0rem;
+    padding-inline: 0rem;
+    gap: 1rem;
+  }
 }
 header .nav__menu > li {
   display: flex;
@@ -195,9 +225,19 @@ header .nav__menu .active {
 header .nav__menu .navbar__item {
   list-style-type: none;
 }
+@media screen and (max-width: 480px) {
+  header .nav__menu .navbar__item {
+    font-size: 0.8rem;
+  }
+}
 header .nav__menu .navbar__item .active {
   background-color: #887979;
   box-shadow: 2px 2px 8px white inset;
+}
+@media screen and (max-width: 480px) {
+  header .navegacion {
+    padding-top: 0.5rem;
+  }
 }
 
 /* ---------------------------------------------PAGINA PRODUCTOS---------------------------------------------- */
@@ -209,10 +249,21 @@ header .nav__menu .navbar__item .active {
   padding-top: 2rem;
   padding-inline: 15rem;
 }
+@media screen and (max-width: 480px) {
+  .buzos {
+    padding-left: 3rem;
+    font-size: 1rem;
+  }
+}
 
 main .card {
   background-color: #802c2c;
   border: 0.05rem solid white;
+}
+@media screen and (max-width: 480px) {
+  main .card {
+    width: 13rem;
+  }
 }
 main .card .card-text {
   display: flex;
@@ -220,6 +271,11 @@ main .card .card-text {
   justify-content: center;
   font-family: "Noto Serif", serif;
   color: white;
+}
+@media screen and (max-width: 480px) {
+  main .card .card-text {
+    font-size: 0.8rem;
+  }
 }
 main .card .card-text1 {
   display: flex;
@@ -242,17 +298,57 @@ main .card .card-img-top {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-areas: "img1   img2" "img3   img4" "vermas vermas";
+    gap: 0.7rem;
+    padding-inline: 2rem;
+  }
+}
 .cards .img1 {
   grid-area: img1;
+}
+@media screen and (max-width: 480px) {
+  .cards .img1 {
+    grid-area: img1;
+    padding: 0rem;
+  }
 }
 .cards .img2 {
   grid-area: img2;
 }
+@media screen and (max-width: 480px) {
+  .cards .img2 {
+    grid-area: img2;
+    padding: 0rem;
+  }
+}
 .cards .img3 {
   grid-area: img3;
 }
+@media screen and (max-width: 480px) {
+  .cards .img3 {
+    grid-area: img3;
+    padding: 0rem;
+  }
+}
 .cards .img4 {
   grid-area: img4;
+}
+@media screen and (max-width: 480px) {
+  .cards .img4 {
+    grid-area: img4;
+    padding: 0rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cards .button {
+    grid-area: vermas;
+    display: flex;
+  }
 }
 .cards .button a {
   grid-area: vermas;
@@ -276,6 +372,12 @@ main .card .card-img-top {
   padding-top: 5rem;
   padding-inline: 15rem;
 }
+@media screen and (max-width: 480px) {
+  .remeras {
+    font-size: 1rem;
+    padding: 0.5rem 3rem 0rem 0rem;
+  }
+}
 
 .cards__remeras {
   display: grid;
@@ -286,20 +388,62 @@ main .card .card-img-top {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .cards__remeras {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-areas: "img5   img6" "img7   img8" "vermas vermas";
+    gap: 0.7rem;
+    padding-inline: 2rem;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
 .cards__remeras .img5 {
   grid-area: img5;
+}
+@media screen and (max-width: 480px) {
+  .cards__remeras .img5 {
+    grid-area: img5;
+    padding: 0rem;
+  }
 }
 .cards__remeras .img6 {
   grid-area: img6;
 }
+@media screen and (max-width: 480px) {
+  .cards__remeras .img6 {
+    grid-area: img6;
+    padding: 0rem;
+  }
+}
 .cards__remeras .img7 {
   grid-area: img7;
+}
+@media screen and (max-width: 480px) {
+  .cards__remeras .img7 {
+    grid-area: img7;
+    padding: 0rem;
+  }
 }
 .cards__remeras .img8 {
   grid-area: img8;
 }
+@media screen and (max-width: 480px) {
+  .cards__remeras .img8 {
+    grid-area: img8;
+    padding: 0rem;
+  }
+}
 .cards__remeras .button__remeras {
   text-align: end;
+}
+@media screen and (max-width: 480px) {
+  .cards__remeras .button__remeras {
+    grid-area: vermas;
+    display: flex;
+  }
 }
 .cards__remeras .button__remeras a {
   grid-area: vermas;
@@ -323,6 +467,11 @@ main .card .card-img-top {
   justify-content: center;
   margin: 7rem 0rem 5rem 6rem;
 }
+@media screen and (max-width: 480px) {
+  .footer-principal .container {
+    margin-inline: 0rem;
+  }
+}
 .footer-principal .container p {
   font-style: oblique;
 }
@@ -332,6 +481,13 @@ main .card .card-img-top {
   justify-content: center;
   margin: 10px 130px;
 }
+@media screen and (max-width: 480px) {
+  .footer-principal .container .imagen {
+    margin: 2px 54px;
+    margin-inline: 2.5rem;
+    width: 4rem;
+  }
+}
 .footer-principal .container .descripcion {
   display: flex;
   align-items: center;
@@ -340,6 +496,11 @@ main .card .card-img-top {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-family: "Open Sans";
+}
+@media screen and (max-width: 480px) {
+  .footer-principal .container .descripcion {
+    font-size: 0.5rem;
+  }
 }
 
 .footer-secundario {
@@ -361,8 +522,19 @@ main .card .card-img-top {
 .footer-secundario .redes {
   padding: 0rem;
 }
+@media screen and (max-width: 480px) {
+  .footer-secundario .redes {
+    display: flex;
+    padding-left: 0rem;
+  }
+}
 .footer-secundario .redes li {
   display: inline-block;
+}
+@media screen and (max-width: 480px) {
+  .footer-secundario .redes li {
+    font-size: 1.3rem;
+  }
 }
 .footer-secundario .redes a {
   padding: 10px;
@@ -392,6 +564,12 @@ main .card .card-img-top {
   margin-left: 15rem;
   margin-right: 15rem;
   border-bottom: 1px solid white;
+}
+@media screen and (max-width: 480px) {
+  .conteiner__giftcard {
+    padding: 4rem 0rem 0rem 0rem;
+    margin: 2rem 4rem 0rem 4rem;
+  }
 }
 .conteiner__giftcard .titulo__gifcard {
   color: white;
@@ -429,10 +607,27 @@ main .card .card-img-top {
   padding-inline: 5rem;
   height: 100vh;
 }
+@media screen and (max-width: 480px) {
+  .conteiner__nosotros {
+    display: grid;
+    padding-inline: 0rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conteiner__nosotros .img__nosotros {
+    width: 40%;
+    padding-top: 2rem;
+  }
+}
 
 .contenido__principal {
   padding: 3rem;
   padding-top: 10rem;
+}
+@media screen and (max-width: 480px) {
+  .contenido__principal {
+    padding-top: 0;
+  }
 }
 .contenido__principal .titulo__nosotros {
   color: white;
@@ -445,6 +640,11 @@ main .card .card-img-top {
   font-size: 3rem;
   font-family: "Open Sans", sans-serif;
 }
+@media screen and (max-width: 480px) {
+  .contenido__principal .titulo__nosotros {
+    font-size: 2rem;
+  }
+}
 .contenido__principal .parrafo__nosotros {
   color: white;
   display: flex;
@@ -454,6 +654,12 @@ main .card .card-img-top {
   font-size: 1.05rem;
   font-family: "Noto Serif", serif;
   margin-bottom: 5rem;
+}
+@media screen and (max-width: 480px) {
+  .contenido__principal .parrafo__nosotros {
+    font-size: 0.8rem;
+    margin: 0;
+  }
 }
 
 /* ---------------------------------------------PAGINA CONTACTO---------------------------------------------- */
@@ -465,12 +671,32 @@ main .card .card-img-top {
   display: flex;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .form__contacto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
 .form__contacto .contact {
   width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .form__contacto .contact {
+    width: 70%;
+  }
 }
 .form__contacto .contact .InfoContacto {
   color: white;
   padding: 6rem 5rem;
+}
+@media screen and (max-width: 480px) {
+  .form__contacto .contact .InfoContacto {
+    padding-inline: 0rem;
+    padding: 4rem 0rem 1rem 0rem;
+  }
 }
 .form__contacto .contact h2 {
   font-family: "Open Sans", sans-serif;
@@ -492,6 +718,12 @@ main .card .card-img-top {
   flex-direction: column;
   gap: 1rem;
 }
+@media screen and (max-width: 480px) {
+  .formulario .InfoForm {
+    padding: 0;
+    gap: 0.5rem;
+  }
+}
 .formulario .InfoForm .form-colum {
   border-radius: 0.3rem;
   border: 1px solid black;
@@ -505,6 +737,11 @@ main .card .card-img-top {
   font-size: 1.5rem;
   color: white;
   text-align: start;
+}
+@media screen and (max-width: 480px) {
+  .formulario h2 {
+    font-size: 1rem;
+  }
 }
 .formulario .btn {
   width: -moz-max-content;
