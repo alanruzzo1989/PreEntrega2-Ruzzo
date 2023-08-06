@@ -146,4 +146,116 @@ header .nav__menu .navbar__item {
 header .nav__menu .navbar__item .active {
   background-color: #887979;
   box-shadow: 2px 2px 8px white inset;
+}
+
+.buzos {
+  color: red;
+  text-shadow: 10px 0px 50px #ffffff;
+  font-family: "Noto Serif", serif;
+  font-size: xx-large;
+  padding-top: 2rem;
+  padding-inline: 15rem;
+}
+
+main .card {
+  background-color: #802c2c;
+  border: 0.05rem solid white;
+}
+main .card .card-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Serif", serif;
+  color: white;
+}
+main .card .card-text1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+}
+main .card .card-img-top {
+  padding: 0.3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "img1 img2 img3 img4 vermas";
+  gap: 0.5rem;
+  padding-inline: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.cards .img1 {
+  grid-area: img1;
+}
+.cards .img2 {
+  grid-area: img2;
+}
+.cards .img3 {
+  grid-area: img3;
+}
+.cards .img4 {
+  grid-area: img4;
+}
+.cards .button a {
+  grid-area: vermas;
+  color: red;
+  border: 0.5px solid rgb(236, 174, 174);
+  border-radius: 5rem;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  padding-inline: 1.5rem;
+  text-decoration: none;
+}
+
+.remeras {
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  color: red;
+  text-shadow: 10px 0px 50px #ffffff;
+  font-family: "Noto Serif", serif;
+  font-size: xx-large;
+  padding-top: 5rem;
+  padding-inline: 15rem;
+}
+
+.cards__remeras {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "vermas img5 img6 img7 img8";
+  gap: 0.5rem;
+  padding-inline: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.cards__remeras .img5 {
+  grid-area: img5;
+}
+.cards__remeras .img6 {
+  grid-area: img6;
+}
+.cards__remeras .img7 {
+  grid-area: img7;
+}
+.cards__remeras .img8 {
+  grid-area: img8;
+}
+.cards__remeras .button__remeras {
+  text-align: end;
+}
+.cards__remeras .button__remeras a {
+  grid-area: vermas;
+  color: red;
+  height: 2rem;
+  border: 0.5px solid rgb(236, 174, 174);
+  border-radius: 5rem;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  padding-inline: 1.5rem;
+  text-decoration: none;
 }/*# sourceMappingURL=estilo.css.map */

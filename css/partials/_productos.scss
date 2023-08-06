@@ -1,0 +1,133 @@
+.buzos {
+    color: red;
+    text-shadow: 10px 0px 50px  #ffffff;
+    font-family: 'Noto Serif', serif;
+    font-size:xx-large;
+    padding-top: 2rem;
+    padding-inline: 15rem;
+}
+
+main {
+    .card {
+        background-color: #802c2c;
+        border: .05rem solid white;
+
+        .card-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Noto Serif', serif;
+            color: white;
+        }
+        
+        .card-text1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: .8rem;
+            color: white;
+        }
+        
+        .card-img-top {
+            padding: .3rem;
+        }
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "img1 img2 img3 img4 vermas";
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    .img1 {
+        grid-area: img1;
+    }
+    
+    .img2 {
+        grid-area: img2;
+    }
+    
+    .img3 {
+        grid-area: img3;
+    }
+    
+    .img4 {
+        grid-area: img4;
+    }
+    
+    .button {
+
+        a {
+            grid-area: vermas;
+            color: red;
+            border: .5px solid rgb(236, 174, 174);
+            border-radius: 5rem;   
+            text-align: center;
+            font-family: 'Noto Serif', serif;
+            padding-inline: 1.5rem;
+            text-decoration: none;
+        }
+    }
+}
+
+.remeras {
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    color: red;
+    text-shadow: 10px 0px 50px  #ffffff;
+    font-family: 'Noto Serif', serif;
+    font-size:xx-large;
+    padding-top: 5rem;
+    padding-inline: 15rem;
+}
+
+.cards__remeras {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "vermas img5 img6 img7 img8";
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    .img5 {
+        grid-area: img5;
+    }
+    
+    .img6 {
+        grid-area: img6;
+    }
+    
+    .img7 {
+        grid-area: img7;
+    }
+    
+    .img8 {
+        grid-area: img8;
+    }
+    
+    .button__remeras {
+        text-align: end;
+
+        a {
+            grid-area: vermas;
+            color: red;
+            height: 2rem;
+            border: .5px solid rgb(236, 174, 174);
+            border-radius: 5rem;   
+            text-align: center;
+            font-family: 'Noto Serif', serif;
+            padding-inline: 1.5rem;
+            text-decoration: none;
+        }
+    }
+}
+
