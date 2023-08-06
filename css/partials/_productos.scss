@@ -1,7 +1,7 @@
 .buzos {
     color: red;
     text-shadow: 10px 0px 50px  #ffffff;
-    font-family: 'Noto Serif', serif;
+    font-family: $NotoSerif;
     font-size:xx-large;
     padding-top: 2rem;
     padding-inline: 15rem;
@@ -16,7 +16,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Noto Serif', serif;
+            font-family: $NotoSerif;
             color: white;
         }
         
@@ -24,7 +24,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $OpenSans;
             font-size: .8rem;
             color: white;
         }
@@ -69,7 +69,7 @@ main {
             border: .5px solid rgb(236, 174, 174);
             border-radius: 5rem;   
             text-align: center;
-            font-family: 'Noto Serif', serif;
+            font-family: $NotoSerif;
             padding-inline: 1.5rem;
             text-decoration: none;
         }
@@ -81,8 +81,8 @@ main {
     text-align: end;
     justify-content: end;
     color: red;
-    text-shadow: 10px 0px 50px  #ffffff;
-    font-family: 'Noto Serif', serif;
+    text-shadow: 10px 0px 50px #ffffff;
+    font-family: $NotoSerif;
     font-size:xx-large;
     padding-top: 5rem;
     padding-inline: 15rem;
@@ -124,7 +124,7 @@ main {
             border: .5px solid rgb(236, 174, 174);
             border-radius: 5rem;   
             text-align: center;
-            font-family: 'Noto Serif', serif;
+            font-family: $NotoSerif;
             padding-inline: 1.5rem;
             text-decoration: none;
         }

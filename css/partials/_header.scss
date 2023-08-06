@@ -1,5 +1,5 @@
 .body__productos{
-    background-color: #050505;
+    background-color: $FondoProductos;
 }
 
 header {
@@ -15,8 +15,8 @@ header {
         align-items: center;
 
         .logo {
-            font-family: 'Noto Serif', serif;
-            color: white;
+            font-family: $NotoSerif;
+            color: $ColorPricipal;
         }
 
         .logo__simbolo {
@@ -24,7 +24,7 @@ header {
         }
 
         .logo__indum {
-            font-family: 'Open Sans', sans-serif;
+            font-family: $OpenSans;
             font:caption;
             font-size: 1.8rem;
         }
@@ -49,20 +49,20 @@ header {
 
             &:hover {
                 background-color: #887979;
-                box-shadow: 2px 2px 8px white inset;
+                box-shadow: 2px 2px 8px $ColorPricipal inset;
             }
         }
 
         & a {
             text-decoration: none;
             color: #f5b4b4;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $OpenSans;
             text-shadow: 1px 1px 1px #f74141;
         }
 
         .active {
             background-color: #887979;
-            box-shadow: 2px 2px 8px white inset;
+            box-shadow: 2px 2px 8px $ColorPricipal inset;
         }
 
         .navbar__item {
@@ -70,7 +70,7 @@ header {
 
             .active {
                 background-color: #887979;
-                box-shadow: 2px 2px 8px white inset;
+                box-shadow: 2px 2px 8px $ColorPricipal inset;
             }
         }
     }  

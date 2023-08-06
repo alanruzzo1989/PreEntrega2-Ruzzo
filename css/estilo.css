@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+
+/* -----------------------------------------------------RESET----------------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +17,7 @@
   color: black;
 }
 
+/* -------------------------------------------------PAGINA INICIAL------------------------------------------------ */
 body {
   background-color: black;
 }
@@ -81,6 +84,7 @@ body {
   background-image: url(../Img/email.png);
 }
 
+/* ----------------------------------------------BARRA NAVEGACION----------------------------------------------- */
 .body__productos {
   background-color: #050505;
 }
@@ -148,6 +152,7 @@ header .nav__menu .navbar__item .active {
   box-shadow: 2px 2px 8px white inset;
 }
 
+/* --------------------------------------PAGINA PRODUCTOS / SECCION FOTOS--------------------------------------- */
 .buzos {
   color: red;
   text-shadow: 10px 0px 50px #ffffff;
@@ -258,4 +263,71 @@ main .card .card-img-top {
   font-family: "Noto Serif", serif;
   padding-inline: 1.5rem;
   text-decoration: none;
+}
+
+/* -----------------------------------------------------FOOTER---------------------------------------------------- */
+.footer-principal {
+  margin-top: 0rem;
+}
+.footer-principal .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7rem 0rem 5rem 6rem;
+}
+.footer-principal .container p {
+  font-style: oblique;
+}
+.footer-principal .container .imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 130px;
+}
+.footer-principal .container .descripcion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-family: "Open Sans";
+}
+
+.footer-secundario {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-inline: 0px;
+  padding-block: 10px;
+}
+.footer-secundario .footer-menu {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer-secundario .footer-menu a {
+  color: white;
+  text-decoration: none;
+}
+.footer-secundario .redes {
+  padding: 0rem;
+}
+.footer-secundario .redes li {
+  display: inline-block;
+}
+.footer-secundario .redes a {
+  padding: 10px;
+}
+.footer-secundario .redes a img {
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+
+.footer-pagos {
+  padding: 5px;
+  width: 50px;
+  height: 40px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=estilo.css.map */
