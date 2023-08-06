@@ -28,6 +28,15 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "logo  productos  giftcard" "logo  nosotros   contactos";
 }
+@media screen and (max-width: 480px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    height: 100vh;
+  }
+}
 .home .home__img {
   gap: 20rem;
   border: groove 5px #7e7c7a;
@@ -47,6 +56,20 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (max-width: 480px) {
+  .home .home__img {
+    display: flex;
+    justify-content: end;
+    gap: 0rem;
+    flex: 1.5;
+    border: solid 1px #7e7c7a;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 480px) {
+  .home .home__img p {
+    font-size: 15px;
+  }
+}
 .home a {
   border: groove 5px #7e7c7a;
   border-radius: 2%;
@@ -54,6 +77,12 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .home a {
+    border: solid 1px black;
+    border-radius: 15px;
+  }
 }
 .home .home__productos, .home .home__contacto, .home .home__nosotros, .home .home__giftcard {
   grid-area: productos;
@@ -67,20 +96,40 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 480px) {
+  .home .home__productos, .home .home__contacto, .home .home__nosotros, .home .home__giftcard {
+    flex: 1;
+  }
+}
 .home .home__giftcard {
   grid-area: giftcard;
   background-color: #202020;
   background-image: url(../Img/IMGGiftcard.png);
+}
+@media screen and (max-width: 480px) {
+  .home .home__giftcard {
+    flex: 1;
+  }
 }
 .home .home__nosotros {
   grid-area: nosotros;
   background-color: #2c2b2b;
   background-image: url(../Img/IMGQuienSoy.png);
 }
+@media screen and (max-width: 480px) {
+  .home .home__nosotros {
+    flex: 1;
+  }
+}
 .home .home__contacto {
   grid-area: contactos;
   background-color: #3f3e3e;
   background-image: url(../Img/email.png);
+}
+@media screen and (max-width: 480px) {
+  .home .home__contacto {
+    flex: 1;
+  }
 }
 
 /* --------------------------------------------BARRA DE NAVEGACION--------------------------------------------- */
