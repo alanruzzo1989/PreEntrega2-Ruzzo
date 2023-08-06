@@ -92,7 +92,7 @@
 
 /* ------------------------------------------------PAGINA GIFT CARD------------------------------------------------ */
 
-.body__giftcard {
+/*.body__giftcard {
     background-color: #202020;
 }
 
@@ -126,11 +126,11 @@
     font-family:  Geneva;
     letter-spacing: .14rem;
     margin-bottom: 5rem;
-}
+}*/
 
 /* ------------------------------------------------PAGINA NOSOTROS------------------------------------------------ */
 
-.body__nosotros {
+/*.body__nosotros {
     background-color: #2c2b2b;
 }
 
@@ -168,11 +168,11 @@
     font-size: 1.05rem;
     font-family:  Geneva;
     margin-bottom: 5rem;
-}
+}*/
 
 /* ------------------------------------------------PAGINA CONTACTO------------------------------------------------ */
 
-.body__contacto {
+/*.body__contacto {
     background-color: #3f3e3e;
 }
 
@@ -200,9 +200,9 @@
     padding: 0.5rem 0 1rem 0;
     font-family: 'Noto Serif Makasar', serif;
     font-weight: 800;
-}
+}*/
 
-.formulario {
+/*.formulario {
     width: 50%;
 }
 
@@ -243,7 +243,7 @@
 .btn:hover {
     background-color: #252424;
     color: white;
-}
+}*/
 
 /* -----------------------------------------MEDIA QUARIES PAGINA INICIAL----------------------------------------- */
 

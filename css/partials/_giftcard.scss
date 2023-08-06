@@ -1,0 +1,36 @@
+/* ---------------------------------------------PAGINA GIFT CARD--------------------------------------------- */
+.body__giftcard {
+    background-color: $FondoGiftcard;
+}
+
+.conteiner__giftcard {
+    padding-top: 2rem;
+    padding-inline: 5rem;
+    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-bottom: 1px solid $ColorPricipal;
+
+    .titulo__gifcard {
+        color: $ColorPricipal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: .5rem;
+        text-decoration: underline 1px solid $ColorPricipal;
+        font-size: 3rem;
+        font-family: $OpenSans;
+    }
+
+    .parrafo {
+        color: $ColorPricipal;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-family:  Geneva;
+        letter-spacing: .14rem;
+        margin-bottom: 5rem;
+    }
+}

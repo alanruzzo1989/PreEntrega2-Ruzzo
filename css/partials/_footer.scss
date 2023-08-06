@@ -1,3 +1,4 @@
+/* ---------------------------------------------------FOOTER-------------------------------------------------- */
 .footer-principal {
     margin-top: 0rem;
 
@@ -23,8 +24,8 @@
             align-items: center;
             justify-content: center;
             font-size: 15px;
-            font-family: 'Open Sans', sans-serif;
-            color: white;
+            font-family: $OpenSans;
+            color: $ColorPricipal;
             font-family: 'Open Sans';
         }
     }
@@ -43,7 +44,7 @@
         margin-bottom: 10px;
 
         & a {
-            color: white;
+            color: $ColorPricipal;
             text-decoration: none;
         }
     }

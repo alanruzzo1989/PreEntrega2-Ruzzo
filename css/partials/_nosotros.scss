@@ -1,0 +1,40 @@
+/* ---------------------------------------------PAGINA NOSOTROS---------------------------------------------- */
+.body__nosotros {
+    background-color: $FondoNosotros;
+}
+
+.conteiner__nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: 5rem;
+    height: 100vh;
+}
+
+.contenido__principal {
+    padding: 3rem;
+    padding-top: 10rem;
+
+    .titulo__nosotros {
+        color: $ColorPricipal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: .5rem;
+        text-decoration: underline 1px solid $ColorPricipal;
+        font-size: 3rem;
+        font-family: $OpenSans;
+    }
+    
+    .parrafo__nosotros {
+        color: $ColorPricipal;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.05rem;
+        font-family: $NotoSerif;
+        margin-bottom: 5rem;
+    }
+}
