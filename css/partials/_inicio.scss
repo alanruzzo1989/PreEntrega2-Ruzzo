@@ -38,6 +38,11 @@ body {
         justify-content: center;
         flex-direction: column;
 
+        &.scale-up-hor-center{
+            -webkit-animation:scale-up-hor-center .5s;animation:scale-up-hor-center .5s;
+            @-webkit-keyframes scale-up-hor-center{0%{-webkit-transform:scaleX(.4);transform:scaleX(.4)}100%{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes scale-up-hor-center{0%{-webkit-transform:scaleX(.4);transform:scaleX(.4)}100%{-webkit-transform:scaleX(1);transform:scaleX(1)}}
+        }
+
             @include mobile {
                 display: flex;
                 justify-content:end;
@@ -52,7 +57,6 @@ body {
         }
     }
 }
-
     a {
         border:groove 5px #7e7c7a;
         border-radius: 2%;
@@ -60,6 +64,13 @@ body {
         align-items: center;
         justify-content: center;
         text-decoration: none;
+
+        &:hover {
+            transform: translate(-10px);
+            transition: 0.6s;
+            box-shadow: 5px 5px 20px 5px #c94343;
+            border:solid white;
+        }
 
             @include mobile {
                 border: solid 1px black;
@@ -79,6 +90,12 @@ body {
             background-position: center;
             background-repeat: no-repeat;
 
+            &.scale-in-ver-center1{
+                -webkit-animation:scale-in-ver-center .3s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-ver-center .3s cubic-bezier(.25,.46,.45,.94) both;
+
+                @-webkit-keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}@keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}    
+            }
+
             @include mobile {
                 flex: 1;
             }
@@ -90,6 +107,12 @@ body {
             background-color: $FondoGiftcard;
             background-image: url(../Img/IMGGiftcard.png);
 
+            &.scale-in-ver-center2{
+                -webkit-animation:scale-in-ver-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-ver-center .5s cubic-bezier(.25,.46,.45,.94) both;
+
+                @-webkit-keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}@keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}            
+            }
+
             @include mobile{
                 flex: 1;}
         }
@@ -100,6 +123,12 @@ body {
             background-color: $FondoNosotros;
             background-image: url(../Img/IMGQuienSoy.png);
 
+            &.scale-in-ver-center3{
+                -webkit-animation:scale-in-ver-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-ver-center .7s cubic-bezier(.25,.46,.45,.94) both;
+
+                @-webkit-keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}@keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}            
+            }
+
             @include mobile{
                 flex: 1;}
         }
@@ -109,6 +138,12 @@ body {
             grid-area: contactos;
             background-color: $FondoContacto;
             background-image: url(../Img/email.png);
+
+            &.scale-in-ver-center4{
+                -webkit-animation:scale-in-ver-center .8s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-ver-center .8s cubic-bezier(.25,.46,.45,.94) both;
+
+                @-webkit-keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}@keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}            
+            }
 
             @include mobile{
                 flex: 1;}
