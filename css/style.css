@@ -4,82 +4,9 @@
 
 /* -----------------------------------------------------RESET----------------------------------------------------- */
 
-/* ------------------------------------------------PAGINA INICIAL------------------------------------------------ */
+/* -------------------------------------------------PAGINA INICIAL------------------------------------------------ */
 
-/* ------------------------------------------------PAGINA PRODUCTOS------------------------------------------------ */
-
-.body__productos {
-    background-color: #050505;
-}
-
-.navbar > ul > li:hover {
-    background-color: #887979;
-    box-shadow: 2px 2px 8px white inset;
-}
-
-.active {
-    background-color: #887979;
-    box-shadow: 2px 2px 8px white inset;
-}
-
-.logo {
-    font-family: 'Noto Serif', serif;
-    color: white;
-}
-
-.logo__simbolo {
-    font-size: 1rem;    
-}
-
-.logo__indum {
-    font-family: 'Open Sans', sans-serif;
-    font:caption;
-    font-size: 1.8rem;
-}
-
-.logo__img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.titulo__marca {
-    display: flex;
-    align-items: center;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-inline: 4rem;
-}
-
-li {
-    display: flex;
-    align-items: center;
-    max-width: max-content;
-}
-
-.navbar__item {
-    list-style-type: none;    
-}
-
-.nav__menu {
-    display: flex;
-    gap: 3rem;
-    margin-bottom: 0rem;
-    letter-spacing: .2rem;
-}
-
-.nav__menu a {
-    text-decoration: none;
-    color: #f5b4b4;
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 1px 1px 1px #f74141
-}
+/* -----------------------------------------------PAGINA PRODUCTOS------------------------------------------------ */
 
 /* ---------------------------------------PAGINA PRODUCTOS / SECCION FOTOS---------------------------------------- */
 

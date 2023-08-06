@@ -15,7 +15,7 @@ body {
             gap: 20rem;
             border:groove 5px #7e7c7a;
             border-radius: 2%;
-            font-family: 'Noto Serif Makasar', serif;
+            font-family: $NotoMakasar;
             font-size: 20px;
             text-shadow: 0 0 10px #e58f8f;   
             grid-area: logo;
@@ -43,7 +43,7 @@ body {
         .home__productos {
             grid-area: productos;
             color: #f5b4b4;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $OpenSans;
             text-shadow: 14px 10px 7px #f74141;
             font-size: 20px;
             letter-spacing: 4px;
@@ -56,21 +56,21 @@ body {
         .home__giftcard {
             @extend .home__productos;
             grid-area: giftcard;
-            background-color: #202020;
+            background-color: $FondoGiftcard;
             background-image: url(../Img/IMGGiftcard.png)
         }
 
         .home__nosotros {
             @extend .home__productos;
             grid-area: nosotros;
-            background-color: #302f2f;
+            background-color: $FondoNosotros;
             background-image: url(../Img/IMGQuienSoy.png);
         }
 
         .home__contacto {
             @extend .home__productos;
             grid-area: contactos;
-            background-color: #3f3e3e;
+            background-color: $FondoContacto;
             background-image: url(../Img/email.png);
         }
 

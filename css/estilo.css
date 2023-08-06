@@ -72,11 +72,78 @@ body {
 }
 .home .home__nosotros {
   grid-area: nosotros;
-  background-color: #302f2f;
+  background-color: #2c2b2b;
   background-image: url(../Img/IMGQuienSoy.png);
 }
 .home .home__contacto {
   grid-area: contactos;
   background-color: #3f3e3e;
   background-image: url(../Img/email.png);
+}
+
+.body__productos {
+  background-color: #050505;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-inline: 4rem;
+}
+header .titulo__marca {
+  display: flex;
+  align-items: center;
+}
+header .titulo__marca .logo {
+  font-family: "Noto Serif", serif;
+  color: white;
+}
+header .titulo__marca .logo__simbolo {
+  font-size: 1rem;
+}
+header .titulo__marca .logo__indum {
+  font-family: "Open Sans", sans-serif;
+  font: caption;
+  font-size: 1.8rem;
+}
+header .titulo__marca .logo__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+header .nav__menu {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 0rem;
+  letter-spacing: 0.2rem;
+}
+header .nav__menu > li {
+  display: flex;
+  align-items: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+header .nav__menu > li:hover {
+  background-color: #887979;
+  box-shadow: 2px 2px 8px white inset;
+}
+header .nav__menu a {
+  text-decoration: none;
+  color: #f5b4b4;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 1px 1px 1px #f74141;
+}
+header .nav__menu .active {
+  background-color: #887979;
+  box-shadow: 2px 2px 8px white inset;
+}
+header .nav__menu .navbar__item {
+  list-style-type: none;
+}
+header .nav__menu .navbar__item .active {
+  background-color: #887979;
+  box-shadow: 2px 2px 8px white inset;
 }/*# sourceMappingURL=estilo.css.map */
