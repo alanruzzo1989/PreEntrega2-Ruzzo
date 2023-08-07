@@ -1,7 +1,8 @@
 /* ---------------------------------------------PAGINA CONTACTO---------------------------------------------- */
 .body__contacto {
-    background-color: $FondoContacto;
-}
+    background: rgb(121,75,75);
+    background: linear-gradient(83deg, rgba(121,75,75,1) 0%, rgba(45,42,42,1) 55%);
+    }
 
 .form__contacto {
     display: flex;

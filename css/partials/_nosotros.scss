@@ -1,7 +1,8 @@
 /* ---------------------------------------------PAGINA NOSOTROS---------------------------------------------- */
 .body__nosotros {
-    background-color: $FondoNosotros;
-}
+    background: rgb(157,87,87);
+    background: linear-gradient(166deg, rgba(157,87,87,1) 0%, rgba(38,35,35,1) 38%, rgba(74,74,74,1) 61%);
+    }
 
 .conteiner__nosotros {
     display: flex;

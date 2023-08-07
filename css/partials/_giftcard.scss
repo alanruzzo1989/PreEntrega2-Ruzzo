@@ -1,6 +1,7 @@
 /* ---------------------------------------------PAGINA GIFT CARD--------------------------------------------- */
 .body__giftcard {
-    background-color: $FondoGiftcard;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(32,36,32,1) 47%, rgba(107,81,81,1) 93%);
 }       
 
 .conteiner__giftcard {

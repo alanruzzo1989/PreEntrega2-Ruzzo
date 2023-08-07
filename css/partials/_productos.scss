@@ -1,6 +1,7 @@
 /* ---------------------------------------------PAGINA PRODUCTOS---------------------------------------------- */
 .body__productos {
-    background-color: $FondoProductos;
+    background: rgb(32,36,32);
+background: radial-gradient(circle, rgba(32,36,32,1) 4%, rgba(107,81,81,1) 47%, rgba(0,0,0,1) 93%);
 }
 
 .buzos {
@@ -121,8 +122,10 @@ main {
         a {
             grid-area: vermas;
             color: red;
-            border: .5px solid rgb(236, 174, 174);
-            border-radius: 5rem;   
+            border: .5px solid #000000;
+            border-radius: 5rem;
+            box-shadow: 1px 1px 1px white;
+            text-shadow: 2px 1px 1px #000000;   
             text-align: center;
             font-family: $NotoSerif;
             padding-inline: 1.5rem;
@@ -219,8 +222,10 @@ main {
             grid-area: vermas;
             color: red;
             height: 2rem;
-            border: .5px solid rgb(236, 174, 174);
-            border-radius: 5rem;   
+            border: .5px solid #000000;
+            border-radius: 5rem;
+            box-shadow: 1px 1px 1px white;
+            text-shadow: 2px 1px 1px #000000;    
             text-align: center;
             font-family: $NotoSerif;
             padding-inline: 1.5rem;

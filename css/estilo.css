@@ -313,7 +313,8 @@ header .nav__menu .navbar__item .active {
 
 /* ---------------------------------------------PAGINA PRODUCTOS---------------------------------------------- */
 .body__productos {
-  background-color: #050505;
+  background: rgb(32, 36, 32);
+  background: radial-gradient(circle, rgb(32, 36, 32) 4%, rgb(107, 81, 81) 47%, rgb(0, 0, 0) 93%);
 }
 
 .buzos {
@@ -428,8 +429,10 @@ main .card .card-img-top {
 .cards .button a {
   grid-area: vermas;
   color: red;
-  border: 0.5px solid rgb(236, 174, 174);
+  border: 0.5px solid #000000;
   border-radius: 5rem;
+  box-shadow: 1px 1px 1px white;
+  text-shadow: 2px 1px 1px #000000;
   text-align: center;
   font-family: "Noto Serif", serif;
   padding-inline: 1.5rem;
@@ -524,8 +527,10 @@ main .card .card-img-top {
   grid-area: vermas;
   color: red;
   height: 2rem;
-  border: 0.5px solid rgb(236, 174, 174);
+  border: 0.5px solid #000000;
   border-radius: 5rem;
+  box-shadow: 1px 1px 1px white;
+  text-shadow: 2px 1px 1px #000000;
   text-align: center;
   font-family: "Noto Serif", serif;
   padding-inline: 1.5rem;
@@ -629,7 +634,8 @@ main .card .card-img-top {
 
 /* ---------------------------------------------PAGINA GIFT CARD--------------------------------------------- */
 .body__giftcard {
-  background-color: #202020;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 4%, rgb(32, 36, 32) 47%, rgb(107, 81, 81) 93%);
 }
 
 .conteiner__giftcard {
@@ -684,7 +690,8 @@ main .card .card-img-top {
 
 /* ---------------------------------------------PAGINA NOSOTROS---------------------------------------------- */
 .body__nosotros {
-  background-color: #2c2b2b;
+  background: rgb(157, 87, 87);
+  background: linear-gradient(166deg, rgb(157, 87, 87) 0%, rgb(38, 35, 35) 38%, rgb(74, 74, 74) 61%);
 }
 
 .conteiner__nosotros {
@@ -765,7 +772,8 @@ main .card .card-img-top {
 
 /* ---------------------------------------------PAGINA CONTACTO---------------------------------------------- */
 .body__contacto {
-  background-color: #3f3e3e;
+  background: rgb(121, 75, 75);
+  background: linear-gradient(83deg, rgb(121, 75, 75) 0%, rgb(45, 42, 42) 55%);
 }
 
 .form__contacto {
