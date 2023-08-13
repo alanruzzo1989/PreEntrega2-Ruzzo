@@ -1,7 +1,7 @@
 /* ---------------------------------------------PAGINA PRODUCTOS---------------------------------------------- */
 .body__productos {
     background: rgb(32,36,32);
-background: radial-gradient(circle, rgba(32,36,32,1) 4%, rgba(107,81,81,1) 47%, rgba(0,0,0,1) 93%);
+    background: radial-gradient(circle, rgba(32,36,32,1) 4%, rgba(107,81,81,1) 47%, rgba(0,0,0,1) 93%);
 }
 
 .buzos {
@@ -9,12 +9,26 @@ background: radial-gradient(circle, rgba(32,36,32,1) 4%, rgba(107,81,81,1) 47%, 
     text-shadow: 10px 0px 50px  #ffffff;
     font-family: $NotoSerif;
     font-size:xx-large;
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-inline: 15rem;
 
         @include mobile {
             padding-left: 3rem;
             font-size: 1rem;
+        }
+}
+
+.pantalones {
+    color: red;
+    text-shadow: 10px 0px 50px  #ffffff;
+    font-family: $NotoSerif;
+    font-size:xx-large;
+    padding-top: 7rem;
+    padding-inline: 15rem;
+
+        @include mobile {
+            font-size: 1rem;
+            padding: 0.5rem 3rem 0rem 3rem;
         }
 }
 
@@ -51,6 +65,11 @@ main {
         .card-img-top {
             padding: .3rem;
         }
+
+        .slide-in-blurred-top{-webkit-animation:slide-in-blurred-top .6s cubic-bezier(.23,1.000,.32,1.000) both;animation:slide-in-blurred-top .6s cubic-bezier(.23,1.000,.32,1.000) both;
+            @-webkit-keyframes slide-in-blurred-top{0%{-webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform:translateY(-1000px) scaleY(2.5) scaleX(.2);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1);transform:translateY(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+            @keyframes slide-in-blurred-top{0%{-webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform:translateY(-1000px) scaleY(2.5) scaleX(.2);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1);transform:translateY(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}}
+    
     }
 }
 
@@ -72,7 +91,6 @@ main {
             "img1   img2"
             "img3   img4"
             "vermas vermas";
-            gap: 0.7rem;
             padding-inline: 2rem;
         }
 
@@ -142,7 +160,7 @@ main {
     text-shadow: 10px 0px 50px #ffffff;
     font-family: $NotoSerif;
     font-size:xx-large;
-    padding-top: 5rem;
+    padding-top: 7rem;
     padding-inline: 15rem;
 
         @include mobile {
@@ -169,7 +187,6 @@ main {
         "img5   img6"
         "img7   img8"
         "vermas vermas";
-        gap: 0.7rem;
         padding-inline: 2rem;
         max-width: max-content;
     }

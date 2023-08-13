@@ -35,6 +35,7 @@ body {
     max-height: -moz-max-content;
     max-height: max-content;
     height: 100vh;
+    overflow: hidden;
   }
 }
 .home .home__img {
@@ -219,7 +220,7 @@ header {
 @media screen and (max-width: 480px) {
   header {
     display: grid;
-    padding-inline: 3rem;
+    padding-left: 2rem;
   }
 }
 header .titulo__marca {
@@ -228,7 +229,8 @@ header .titulo__marca {
 }
 @media screen and (max-width: 480px) {
   header .titulo__marca {
-    display: inline;
+    display: flex;
+    padding-top: 1rem;
   }
 }
 header .titulo__marca .logo {
@@ -237,7 +239,7 @@ header .titulo__marca .logo {
 }
 @media screen and (max-width: 480px) {
   header .titulo__marca .logo {
-    font-size: 3rem;
+    font-size: 1.2rem;
     font-style: oblique;
   }
 }
@@ -251,13 +253,13 @@ header .titulo__marca .logo__indum {
 }
 @media screen and (max-width: 480px) {
   header .titulo__marca .logo__indum {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     font-style: oblique;
   }
 }
 header .titulo__marca .logo__img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 header .nav__menu {
@@ -265,6 +267,9 @@ header .nav__menu {
   gap: 3rem;
   margin-bottom: 0rem;
   letter-spacing: 0.2rem;
+}
+header .nav__menu:hover a {
+  filter: blur(1px);
 }
 @media screen and (max-width: 480px) {
   header .nav__menu {
@@ -279,19 +284,22 @@ header .nav__menu > li {
   max-width: -moz-max-content;
   max-width: max-content;
 }
-header .nav__menu > li:hover {
-  background-color: #887979;
-  box-shadow: 2px 2px 8px white inset;
-}
 header .nav__menu a {
   text-decoration: none;
   color: #f5b4b4;
   font-family: "Open Sans", sans-serif;
-  text-shadow: 1px 1px 1px #f74141;
+  box-shadow: 1px 1px;
+  padding-inline: 0.3rem;
+  border-radius: 10% 10px 10px 10px;
+}
+header .nav__menu a:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: none;
 }
 header .nav__menu .active {
-  background-color: #887979;
-  box-shadow: 2px 2px 8px white inset;
+  border-bottom: 5px solid red;
+  box-shadow: 1px 4px 8px red;
+  border-radius: 20px;
 }
 header .nav__menu .navbar__item {
   list-style-type: none;
@@ -322,13 +330,28 @@ header .nav__menu .navbar__item .active {
   text-shadow: 10px 0px 50px #ffffff;
   font-family: "Noto Serif", serif;
   font-size: xx-large;
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-inline: 15rem;
 }
 @media screen and (max-width: 480px) {
   .buzos {
     padding-left: 3rem;
     font-size: 1rem;
+  }
+}
+
+.pantalones {
+  color: red;
+  text-shadow: 10px 0px 50px #ffffff;
+  font-family: "Noto Serif", serif;
+  font-size: xx-large;
+  padding-top: 7rem;
+  padding-inline: 15rem;
+}
+@media screen and (max-width: 480px) {
+  .pantalones {
+    font-size: 1rem;
+    padding: 0.5rem 3rem 0rem 3rem;
   }
 }
 
@@ -364,6 +387,23 @@ main .card .card-text1 {
 main .card .card-img-top {
   padding: 0.3rem;
 }
+main .card .slide-in-blurred-top {
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform-origin: 50% 0;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 
 .cards {
   display: grid;
@@ -380,7 +420,6 @@ main .card .card-img-top {
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr 1fr 0.3fr;
     grid-template-areas: "img1   img2" "img3   img4" "vermas vermas";
-    gap: 0.7rem;
     padding-inline: 2rem;
   }
 }
@@ -447,7 +486,7 @@ main .card .card-img-top {
   text-shadow: 10px 0px 50px #ffffff;
   font-family: "Noto Serif", serif;
   font-size: xx-large;
-  padding-top: 5rem;
+  padding-top: 7rem;
   padding-inline: 15rem;
 }
 @media screen and (max-width: 480px) {
@@ -472,7 +511,6 @@ main .card .card-img-top {
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr 1fr 0.3fr;
     grid-template-areas: "img5   img6" "img7   img8" "vermas vermas";
-    gap: 0.7rem;
     padding-inline: 2rem;
     max-width: -moz-max-content;
     max-width: max-content;
