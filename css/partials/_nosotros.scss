@@ -10,6 +10,7 @@
     justify-content: center;
     text-align: center;
     padding-inline: 5rem;
+    padding-top: 6rem;
     height: 100vh;
 
         @include mobile {
@@ -19,8 +20,8 @@
     
     .img__nosotros {
         @include mobile {
-            width: 40%;
-            padding-top: 2rem;
+            width: 30%;
+            padding-top: 9rem;
         }
     }
 }
@@ -30,7 +31,7 @@
     padding-top: 10rem;
 
         @include mobile {
-            padding-top: 0;
+            padding-top: 1.5rem;
         }
 
     .titulo__nosotros {
@@ -69,6 +70,7 @@
             @include mobile {
                 font-size: .8rem;
                 margin: 0;
+                border-bottom: 1px solid white;
             }
     }
 }

@@ -9,7 +9,8 @@
         margin: 7rem 0rem 5rem 6rem;
 
             @include mobile {
-                margin-inline: 0rem;
+                margin: 0rem;
+                padding-top: 11rem;
             }
 
         & p {

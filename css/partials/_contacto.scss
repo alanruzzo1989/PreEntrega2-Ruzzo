@@ -7,6 +7,7 @@
 .form__contacto {
     display: flex;
     text-align: center;
+    padding-top: 4rem;
 
         @include mobile {
             flex-direction: column;
@@ -20,7 +21,8 @@
         width: 50%;
 
             @include mobile {
-                width: 70%;
+                width: 80%;
+                padding-top: 8rem;
             }
 
         .InfoContacto {

@@ -4,57 +4,101 @@
 }
 
 header {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-inline: 4rem;
 
-        @include mobile {
-            display: grid;
-            padding-left: 2rem;
-        }
+    .contenedor {
+        max-width: 1100px;
+        margin: 0 auto;
+    }    
 
-    .titulo__marca {
+    #menu {
+        display: none;
+    }
+
+    .menu-icono {
+        width: 25px;
+    }
+
+    .menu label {
+        cursor: pointer;
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        right: 0;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
 
             @include mobile {
-                display: flex;
-                padding-top: 1rem;            
+            #menu:checked ~ .navbar {
+            display: initial;
+            background: #000000;
+            border-bottom: 1px solid white;
+            border-radius: 0 0 25px 25px;
+        }
+
+            @include mobile {
+                padding: 30px; 
+                padding-bottom: 0px;
+                
+            label {
+                display: initial;
+            }    
+
+            .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #2A394F;
+                display: none;
+
+                .nav__menu .navbar__item {
+                    width: 100%;
+                }
+                
             }
+        }}
 
-        .logo {
-            font-family: $NotoSerif;
-            color: $ColorPricipal;
+    .logo {
+        font-family: $NotoSerif;
+        color: $ColorPricipal;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
 
-                @include mobile {
-                    font-size: 1.2rem;        
-                    font-style: oblique;
-                }
-        }
-
-        .logo__simbolo {
-            font-size: 1rem;    
-        }
-
-        .logo__indum {
-            font-family: $OpenSans;
-            font:caption;
-            font-size: 1.8rem;
-
-                @include mobile {
-                    font-size: 1.2rem;
-                    font-style: oblique;
-                }
-        }
+            @include mobile {
+                font-size: 1.2rem;        
+                font-style: oblique;
+            }
 
         .logo__img {
             width: 30px;
             height: 30px;
             border-radius: 50%;
         }
+    }
+
+    .logo__simbolo {
+        font-size: 1rem;    
+    }
+
+    .logo__indum {
+        font-family: $OpenSans;
+        font:caption;
+        font-size: 1.8rem;
+
+             @include mobile {
+                font-size: 1.2rem;
+                font-style: oblique;
+            }
+    
+
+        
     }
     
     .nav__menu {
@@ -64,13 +108,16 @@ header {
         letter-spacing: .2rem;
 
             &:hover a {
-                filter: blur(1px);
+                filter: blur(2.5px);
             } 
 
             @include mobile {
                 letter-spacing: 0rem;
                 padding-inline: 0rem;
                 gap: 1rem;
+                flex-direction: column;
+                align-items: center;
+                padding-block: 2.5rem;
             }
 
         > li {
@@ -80,6 +127,7 @@ header {
         }
 
         & a {
+            display: block;
             text-decoration: none;
             color: #f5b4b4;
             font-family: $OpenSans;
@@ -90,17 +138,24 @@ header {
             &:hover {
                 transform: translateY(-3px) scale(1.05);
                 filter: none;
+                box-shadow: 1px 4px 8px  red;
+            }
+
+            @include mobile {
+                box-shadow: none;
+            letter-spacing: .2rem;
             }
         }
 
         .active {
-            border-bottom: 5px solid red;
             box-shadow: 1px 4px 8px  red;
             border-radius: 20px;
         }
 
         .navbar__item {
             list-style-type: none;
+            position: relative;
+            float: left;
 
                 @include mobile {
                     font-size: 0.80rem;
@@ -112,13 +167,5 @@ header {
             }
         }
     }
-
-    .navegacion {
-
-        @include mobile {
-            padding-top: .5rem;
-        }
-    }
 }
-
- 
+}

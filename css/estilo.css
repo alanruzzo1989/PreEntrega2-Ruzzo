@@ -209,82 +209,117 @@ body {
   background-color: #050505;
 }
 
-header {
+header .contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+header #menu {
+  display: none;
+}
+header .menu-icono {
+  width: 25px;
+}
+header .menu label {
+  cursor: pointer;
+  display: none;
+}
+header .menu {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-inline: 4rem;
+  z-index: 1000;
 }
 @media screen and (max-width: 480px) {
-  header {
-    display: grid;
-    padding-left: 2rem;
+  header .menu #menu:checked ~ .navbar {
+    display: initial;
+    background: #000000;
+    border-bottom: 1px solid white;
+    border-radius: 0 0 25px 25px;
   }
 }
-header .titulo__marca {
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 480px) {
-  header .titulo__marca {
-    display: flex;
-    padding-top: 1rem;
+@media screen and (max-width: 480px) and (max-width: 480px) {
+  header .menu {
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+  header .menu label {
+    display: initial;
+  }
+  header .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #2A394F;
+    display: none;
+  }
+  header .menu .navbar .nav__menu .navbar__item {
+    width: 100%;
   }
 }
-header .titulo__marca .logo {
+header .menu .logo {
   font-family: "Noto Serif", serif;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 480px) {
-  header .titulo__marca .logo {
+  header .menu .logo {
     font-size: 1.2rem;
     font-style: oblique;
   }
 }
-header .titulo__marca .logo__simbolo {
+header .menu .logo .logo__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+header .menu .logo__simbolo {
   font-size: 1rem;
 }
-header .titulo__marca .logo__indum {
+header .menu .logo__indum {
   font-family: "Open Sans", sans-serif;
   font: caption;
   font-size: 1.8rem;
 }
 @media screen and (max-width: 480px) {
-  header .titulo__marca .logo__indum {
+  header .menu .logo__indum {
     font-size: 1.2rem;
     font-style: oblique;
   }
 }
-header .titulo__marca .logo__img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-header .nav__menu {
+header .menu .nav__menu {
   display: flex;
   gap: 3rem;
   margin-bottom: 0rem;
   letter-spacing: 0.2rem;
 }
-header .nav__menu:hover a {
-  filter: blur(1px);
+header .menu .nav__menu:hover a {
+  filter: blur(2.5px);
 }
 @media screen and (max-width: 480px) {
-  header .nav__menu {
+  header .menu .nav__menu {
     letter-spacing: 0rem;
     padding-inline: 0rem;
     gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2.5rem;
   }
 }
-header .nav__menu > li {
+header .menu .nav__menu > li {
   display: flex;
   align-items: center;
   max-width: -moz-max-content;
   max-width: max-content;
 }
-header .nav__menu a {
+header .menu .nav__menu a {
+  display: block;
   text-decoration: none;
   color: #f5b4b4;
   font-family: "Open Sans", sans-serif;
@@ -292,31 +327,34 @@ header .nav__menu a {
   padding-inline: 0.3rem;
   border-radius: 10% 10px 10px 10px;
 }
-header .nav__menu a:hover {
+header .menu .nav__menu a:hover {
   transform: translateY(-3px) scale(1.05);
   filter: none;
+  box-shadow: 1px 4px 8px red;
 }
-header .nav__menu .active {
-  border-bottom: 5px solid red;
+@media screen and (max-width: 480px) {
+  header .menu .nav__menu a {
+    box-shadow: none;
+    letter-spacing: 0.2rem;
+  }
+}
+header .menu .nav__menu .active {
   box-shadow: 1px 4px 8px red;
   border-radius: 20px;
 }
-header .nav__menu .navbar__item {
+header .menu .nav__menu .navbar__item {
   list-style-type: none;
+  position: relative;
+  float: left;
 }
 @media screen and (max-width: 480px) {
-  header .nav__menu .navbar__item {
+  header .menu .nav__menu .navbar__item {
     font-size: 0.8rem;
   }
 }
-header .nav__menu .navbar__item .active {
+header .menu .nav__menu .navbar__item .active {
   background-color: #887979;
   box-shadow: 2px 2px 8px white inset;
-}
-@media screen and (max-width: 480px) {
-  header .navegacion {
-    padding-top: 0.5rem;
-  }
 }
 
 /* ---------------------------------------------PAGINA PRODUCTOS---------------------------------------------- */
@@ -330,7 +368,7 @@ header .nav__menu .navbar__item .active {
   text-shadow: 10px 0px 50px #ffffff;
   font-family: "Noto Serif", serif;
   font-size: xx-large;
-  padding-top: 5rem;
+  padding-top: 8rem;
   padding-inline: 15rem;
 }
 @media screen and (max-width: 480px) {
@@ -587,7 +625,8 @@ main .card .slide-in-blurred-top {
 }
 @media screen and (max-width: 480px) {
   .footer-principal .container {
-    margin-inline: 0rem;
+    margin: 0rem;
+    padding-top: 11rem;
   }
 }
 .footer-principal .container p {
@@ -695,6 +734,7 @@ main .card .slide-in-blurred-top {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 3.5rem;
   padding-bottom: 0.5rem;
   -webkit-text-decoration: underline 1px solid white;
           text-decoration: underline 1px solid white;
@@ -738,6 +778,7 @@ main .card .slide-in-blurred-top {
   justify-content: center;
   text-align: center;
   padding-inline: 5rem;
+  padding-top: 6rem;
   height: 100vh;
 }
 @media screen and (max-width: 480px) {
@@ -748,8 +789,8 @@ main .card .slide-in-blurred-top {
 }
 @media screen and (max-width: 480px) {
   .conteiner__nosotros .img__nosotros {
-    width: 40%;
-    padding-top: 2rem;
+    width: 30%;
+    padding-top: 9rem;
   }
 }
 
@@ -759,7 +800,7 @@ main .card .slide-in-blurred-top {
 }
 @media screen and (max-width: 480px) {
   .contenido__principal {
-    padding-top: 0;
+    padding-top: 1.5rem;
   }
 }
 .contenido__principal .titulo__nosotros {
@@ -805,6 +846,7 @@ main .card .slide-in-blurred-top {
   .contenido__principal .parrafo__nosotros {
     font-size: 0.8rem;
     margin: 0;
+    border-bottom: 1px solid white;
   }
 }
 
@@ -817,6 +859,7 @@ main .card .slide-in-blurred-top {
 .form__contacto {
   display: flex;
   text-align: center;
+  padding-top: 4rem;
 }
 @media screen and (max-width: 480px) {
   .form__contacto {
@@ -832,7 +875,8 @@ main .card .slide-in-blurred-top {
 }
 @media screen and (max-width: 480px) {
   .form__contacto .contact {
-    width: 70%;
+    width: 80%;
+    padding-top: 8rem;
   }
 }
 .form__contacto .contact .InfoContacto {
