@@ -626,7 +626,7 @@ main .card .slide-in-blurred-top {
 @media screen and (max-width: 480px) {
   .footer-principal .container {
     margin: 0rem;
-    padding-top: 11rem;
+    padding-top: 12rem;
   }
 }
 .footer-principal .container p {
@@ -785,6 +785,7 @@ main .card .slide-in-blurred-top {
   .conteiner__nosotros {
     display: grid;
     padding-inline: 0rem;
+    padding-top: 0.5rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -867,7 +868,7 @@ main .card .slide-in-blurred-top {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 5rem;
+    padding-top: 0rem;
   }
 }
 .form__contacto .contact {
